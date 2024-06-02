@@ -1,0 +1,34 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:15433/message_db_local?currentSchema=public # add database name to URL
+    username: msg # DB user
+    password: msg # DB password
+    driverClassName: org.postgresql.Driver
+  sql:
+    init:
+      platform: postgres
+  flyway:
+    enabled: true
+    locations: classpath:db/migrations
+    validateOnMigrate: false
+logging:
+  level:
+    org.flywaydb: DEBUG
+
+msg:
+  jobs:
+    message-schedule: "* * * 30 * *"
+
+firebase:
+  recepientToken: fBv-cRbzSLqa-uUtefRqdX:APA91bHLX5qm1N1zn-0IbMpYX8pscnIKCpzfXwrKizR7BJE-wOEk7EmF3jGPRddnCtz-DfsNFyEQxU-d3UN_33FKXU7gqlYKgVqSirpzTogkC4ldLvS7RvKMlfcLpK0weVN-BZCGd3RS
+#  recepientToken: foXHHR44Sje48B_tg0qV0w:APA91bGDK7hVs8vsenhmRjlMI17TG4CkfcfPreGkSIzuEqzEA2ihgsis29MCgDf3ZC0xoQo8WqpX3h8yfd7xXRvZeu_l0plm-u7QIb-VjGB-GHnlcQhPuDXuRnvchsDkz9eGjJBnsjCi
+
+
+jwt-security:
+    secret:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJUcmFpbmVlQXBwIiwibmFtZSI6IlRyYWluZWUiLCJpYXQiOjE3MDUxNDQ0MjF9.iuuaVzGG81Tkv9doVTFoaoGEp2cdbyISkL_CBp-JHIY
+    expiration-time: 3621
