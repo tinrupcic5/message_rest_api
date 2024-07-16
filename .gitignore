@@ -3,6 +3,10 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+*.json
+
+src/main/resources/updates.txt
+
 ### STS ###
 .apt_generated
 .classpath

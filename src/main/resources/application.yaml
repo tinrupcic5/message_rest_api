@@ -25,10 +25,9 @@ msg:
     message-schedule: "* * * 30 * *"
 
 firebase:
-  recepientToken: fBv-cRbzSLqa-uUtefRqdX:APA91bHLX5qm1N1zn-0IbMpYX8pscnIKCpzfXwrKizR7BJE-wOEk7EmF3jGPRddnCtz-DfsNFyEQxU-d3UN_33FKXU7gqlYKgVqSirpzTogkC4ldLvS7RvKMlfcLpK0weVN-BZCGd3RS
-#  recepientToken: foXHHR44Sje48B_tg0qV0w:APA91bGDK7hVs8vsenhmRjlMI17TG4CkfcfPreGkSIzuEqzEA2ihgsis29MCgDf3ZC0xoQo8WqpX3h8yfd7xXRvZeu_l0plm-u7QIb-VjGB-GHnlcQhPuDXuRnvchsDkz9eGjJBnsjCi
+  recepientToken:
 
 
 jwt-security:
-    secret:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJUcmFpbmVlQXBwIiwibmFtZSI6IlRyYWluZWUiLCJpYXQiOjE3MDUxNDQ0MjF9.iuuaVzGG81Tkv9doVTFoaoGEp2cdbyISkL_CBp-JHIY
+    secret:
     expiration-time: 3621
