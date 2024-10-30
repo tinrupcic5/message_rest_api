@@ -36,8 +36,12 @@ This guide will walk you through setting up a Firebase project, downloading the 
 ## Prerequisites
 - Firebase account ([Firebase Console](https://console.firebase.google.com/))
 - Java & Spring Boot installed
+- Project Documentation ([Documentation CRO](https://github.com/tinrupcic5/message_rest_api/blob/dev/src/main/resources/documents/mobilna_aplikacija_za_razmjenu_poruka_tin_rupcic.pdf))
 
 ---
+## Android app
+- Message App Android ([github repository](https://github.com/tinrupcic5/message_app_droid))
+
 
 ## 1. Create a Firebase Project
 
