@@ -99,7 +99,7 @@ $ mvn clean install
 $ docker compose down --remove-orphans
 ```
 
-## ktlint
+## Linter - ktlint
 #### Install the ktlint plugin in IntelliJ:
 
 Go to "Settings" or "Preferences". Navigate to "Plugins" on the left side.
