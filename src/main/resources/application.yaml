@@ -1,0 +1,29 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:15433/message_db_local?currentSchema=public # add database name to URL
+    username: msg # DB user
+    password: msg # DB password
+    driverClassName: org.postgresql.Driver
+  sql:
+    init:
+      platform: postgres
+  flyway:
+    enabled: true
+    locations: classpath:db/migrations
+    validateOnMigrate: false
+logging:
+  level:
+    org.flywaydb: DEBUG
+
+msg:
+  jobs:
+    message-schedule: "* * * 30 * *"
+
+jwt-security:
+    secret:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJNZXNzYWdlIFJlc3QgQXBpIiwibmFtZSI6IlZTSVRFIiwiaWF0IjoxNzA1MTQ0NDIxfQ.vsDNYwJwOjS4usnHaMeXfQREOPomXVa5sA_FJKPUPjU
+    expiration-time: 3621

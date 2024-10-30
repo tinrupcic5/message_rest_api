@@ -1,0 +1,225 @@
+###
+DELETE http://localhost:8080/api/user/delete/3
+Content-Type: application/json
+
+###
+DELETE http://localhost:8080/api/chat/10
+Content-Type: application/json
+
+
+### GET request with parameter
+GET http://localhost:8080/api/user/delete/1
+Accept: application/json
+
+### GET request with parameter
+GET http://localhost:8080/api/message/1
+Accept: application/json
+
+
+### GET request with parameter
+GET http://localhost:8080/api/chat/1
+Accept: application/json
+
+
+### Send POST request with json body
+POST http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+  "userName": "haris",
+  "phoneNumber": "333-123-12211",
+  "userEmail": "haris@example.com",
+  "password": "haris",
+  "firebaseUserRequest": {
+    "firebaseToken": "1231232123213",
+    "userRequest": {
+      "userName": "haris",
+      "phoneNumber": "333-123-12211",
+      "userEmail": "haris@example.com"
+    }
+  }
+}
+
+### GET request with parameter
+GET http://localhost:8080/api/user/login?username=tin&password=tin
+Accept: application/json
+
+
+### GET request with parameter
+GET http://localhost:8080/api/chat/1
+Accept: application/json
+
+### GET request with parameter
+###
+GET http://localhost:8080/api/message/2
+Accept: application/json
+
+### GET request with parameter
+GET http://localhost:8080/api/message/36
+Accept: application/json
+
+###
+DELETE http://localhost:8080/api/message/delete/4
+Content-Type: application/json
+
+###
+DELETE http://localhost:8080/api/chat/8
+Content-Type: application/json
+
+### Send POST request with json body
+POST http://localhost:8080/api/message
+Content-Type: application/json
+
+{
+  "messageText": "bok",
+  "chat": {
+    "chatId": 3,
+    "chatName": "nesto",
+    "userCreator": {
+      "userId": 6,
+      "userName": "marin",
+      "phoneNumber": "0917556266",
+      "userEmail": "marin@gmail.com"
+    }
+  },
+  "userSender": {
+    "userId": 1,
+    "userName": "tin",
+    "phoneNumber": "0918881124",
+    "userEmail": "tin@gmail.com"
+  }
+}
+
+### GET request with parameter
+GET http://localhost:8080/api/user/1
+Accept: application/json
+
+### GET request with parameter
+GET http://localhost:8080/api/chat/find/7
+Accept: application/json
+
+###svaki put ce se napraviti novi chat jer nema id-a
+### Send POST request with json body
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "chatRequest": {
+    "chatName": "TinTin",
+    "userCreator": {
+      "userId": 3,
+      "userName": "haris",
+      "phoneNumber": "333-123-12211",
+      "userEmail": "haris@example.com"
+    }
+  },
+  "participantsRequest": [
+    {
+      "chat": {
+        "chatName": "TinTin",
+        "userCreator": {
+          "userId": 3,
+          "userName": "haris",
+          "phoneNumber": "333-123-12211",
+          "userEmail": "haris@example.com"
+        }
+      },
+      "user": {
+        "userId": 2,
+        "userName": "marin",
+        "phoneNumber": "222-123-12211",
+        "userEmail": "marin@example.com"
+      }
+    },
+    {
+      "chat": {
+        "chatName": "TinTin",
+        "userCreator": {
+          "userId": 3,
+          "userName": "haris",
+          "phoneNumber": "333-123-12211",
+          "userEmail": "haris@example.com"
+        }
+      },
+      "user": {
+        "userId": 3,
+        "userName": "haris",
+        "phoneNumber": "333-123-12211",
+        "userEmail": "haris@example.com"
+      }
+    },
+    {
+      "chat": {
+        "chatName": "Tin",
+        "userCreator": {
+          "userId": 3,
+          "userName": "haris",
+          "phoneNumber": "333-123-12211",
+          "userEmail": "haris@example.com"
+        }
+      },
+      "user": {
+        "userId": 1,
+        "userName": "tin",
+        "phoneNumber": "111-123-12211",
+        "userEmail": "tin@example.com"
+      }
+    }
+  ]
+}
+
+
+
+### 2
+### Send POST request with json body
+POST http://localhost:8080/api/chat
+Content-Type: application/json
+
+{
+  "chatRequest": {
+    "chatName": "NOVI",
+    "userCreator": {
+      "userId": 2,
+      "userName": "marin",
+      "phoneNumber": "0918887642",
+      "userEmail": "marin@gmail.com"
+    }
+  },
+  "participantsRequest": [
+    {
+      "chat": {
+        "chatName": "TinTin",
+        "userCreator": {
+          "userId": 2,
+          "userName": "marin",
+          "phoneNumber": "0918887642",
+          "userEmail": "marin@gmail.com"
+        }
+      },
+      "user": {
+        "userId": 1,
+        "userName": "tin",
+        "phoneNumber": "0918888888",
+        "userEmail": "tin@gmail.com"
+      }
+    },
+    {
+      "chat": {
+        "chatName": "TinTin",
+        "userCreator": {
+          "userId": 2,
+          "userName": "marin",
+          "phoneNumber": "0918887642",
+          "userEmail": "marin@gmail.com"
+        }
+      },
+      "user": {
+        "userId": 2,
+        "userName": "marin",
+        "phoneNumber": "0918887642",
+        "userEmail": "marin@gmail.com"
+      }
+    }
+  ]
+}
+
