@@ -3,7 +3,7 @@
 A message REST API is a type of web-based interface that allows developers to access and manipulate data related to messaging through a standardized set of HTTP requests.
 This type of API typically provides a range of functionalities, such as sending and receiving messages, managing contacts, and accessing message histories.
 
-## Relationship
+## Relationship :link:
 ```commandline
 +---------------------+      +---------------------+       +---------------------+
 |      firebase       |      |       users         |       |       chats         |
